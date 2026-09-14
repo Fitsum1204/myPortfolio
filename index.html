@@ -8,355 +8,279 @@
   <link rel="stylesheet" href="style.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,500;8..60,600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.14.0/devicon.min.css" />
-  <title> A Simple & Clean Portfolio </title>
-  <meta name="description" content=" A Simple & Clean Portfolio of me" />
+  <title>Fitsum Amare | Full-Stack Developer</title>
+  <meta name="description" content="Full-stack developer building production-ready web apps with Next.js, React, TypeScript, Express, and PostgreSQL." />
 </head>
 
 <body>
-  <header class="main-header">
-    <div class="main-header__logo-container">
-      <div class="main-header__logo-img-cont">
-        <img
-          src="/assets/f photo.jpg"
-          alt="logo Image" class="main-header__logo-img" />
-      </div>
-      <h4 class="main-header__logo-text">Fitsum Amare</h4>
-    </div>
-    <nav class="main-header__navigation">
-      <ul class="main-header__navigation-links">
-        <li class="main-header__navigation-link"><a href="./index.html"> Home </a></li>
-        <li class="main-header__navigation-link"><a href="./index.html#about"> About </a></li>
-        <li class="main-header__navigation-link">
-          <a href="./index.html#experience"> Experience </a>
-        </li>
-        <li class="main-header__navigation-link">
-          <a href="./index.html#experience"> Projects </a>
-        </li>
-        
-      </ul>
-    </nav>
-    <div class="main-header__sm-scr-nav-btn">
-      <div class="main-header__sm-scr-nav-btn-line"></div>
-      <div class="main-header__sm-scr-nav-btn-line"></div>
-    </div>
-    <div class="main-header__sm-menu">
-      <div class="main-header__sm-menu-close">
+  <a class="skip-link" href="#home-hero">Skip to content</a>
 
-      </div>
-      <ul class="main-header__sm-menu-links">
-        <li>
-          <a class="main-header__sm-menu-link main-header__sm-menu-link--1" name="home-hero">Home</a>
-        </li>
+  <header class="site-header">
+    <div class="site-header__inner">
+      <a class="brand" href="./index.html">
+        <img src="./assets/f photo.jpg" alt="" class="brand__img" />
+        <span class="brand__text">Fitsum Amare</span>
+      </a>
 
-        <li>
-          <a class="main-header__sm-menu-link main-header__sm-menu-link--2" name="about">About</a>
-        </li>
-        <li>
-          <a class="main-header__sm-menu-link main-header__sm-menu-link--experience" name="experience">Experience</a>
-        </li>
-        <li>
-          <a class="main-header__sm-menu-link main-header__sm-menu-link--3" name="experience">Projects</a>
-        </li>
-        <li>
-          <a class="main-header__sm-menu-link main-header__sm-menu-link--4" name="contact">Contact</a>
-        </li>
-      </ul>
+      <nav class="nav" aria-label="Primary">
+        <ul class="nav__list">
+          <li><a class="nav__link" href="#about">About</a></li>
+          <li><a class="nav__link" href="#services">Services</a></li>
+          <li><a class="nav__link" href="#experience">Work</a></li>
+          <li><a class="nav__link" href="#projects">Projects</a></li>
+        </ul>
+      </nav>
+
+      <button class="menu-btn" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu">
+        <span></span>
+        <span></span>
+      </button>
     </div>
-    <!-- <button class="btn btn-theme btn-sm">Download CV</button>  -->
+
+    <div class="mobile-menu" id="mobile-menu">
+      <button class="mobile-menu__close" type="button" aria-label="Close menu"></button>
+      <nav aria-label="Mobile">
+        <ul class="mobile-menu__list">
+          <li><a class="mobile-menu__link" href="#home-hero">Home</a></li>
+          <li><a class="mobile-menu__link" href="#about">About</a></li>
+          <li><a class="mobile-menu__link" href="#services">Services</a></li>
+          <li><a class="mobile-menu__link" href="#experience">Work</a></li>
+          <li><a class="mobile-menu__link" href="#projects">Projects</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
-
-  <section id="home-hero" class="home-hero">
-    <div class="home-hero__content">
-      <div class="home-hero__info">
-        <h1 class="heading-primary home-hero__heading-primary">
-          <span class="heading-primary__sm"> Hello 👋</span>
-          <span class="heading-primary__main">
-            I'm Fitsum Amare! A Web Developer Building Awesome Webapps And Websites That Powers The Internet
-          </span>
-        </h1>
-        
-      </div>
-    </div>
-  </section>
-  <section id="about" class="about main-section">
-    <div class="main-container">
-      <h2 class="heading-secondary projects__heading-secondary">
-        <span class="heading-secondary__sm"> About 🦄</span>
-        <span class="heading-secondary__main">
-          Here you will find more information about me, what I do, and list of my current skills in programming
-      </h2>
-      <div class="main-section__content">
-        <div class="about__info">
-          <div class="about__main-info">
-            <h3 class="heading-quaternary about__heading-quaternary">
-              My Story
-            </h3>
-            <p class="text-primary about__text-primary">
-              <span>
-                Full-Stack Developer currently working at Vision Vertex, with experience developing web applications across frontend and backend technologies. Skilled in Next.js, React, TypeScript, Express.js, PostgreSQL, and modern tools such as TanStack Query, Zustand, Docker, and Redis. Experienced in building business applications, REST APIs, role-based access control, and automated backend testing. Also open to freelance opportunities and continuously developing practical skills through real-world projects.
-              </span>
-              
-            </p>
-           
+  <main>
+    <section id="home-hero" class="hero">
+      <div class="container hero__grid">
+        <div class="hero__copy">
+          <p class="badge">Available for freelance</p>
+          <h1 class="hero__title">
+            I build web apps that help businesses
+            <em>launch and grow</em>
+          </h1>
+          <p class="hero__lede">
+            Full-stack developer currently shipping business applications at Vision Vertex.
+            I take projects from idea to production — clean UI, reliable APIs, and code you can maintain.
+          </p>
+          <div class="hero__actions">
+            <a class="btn btn--primary" href="#experience">See recent work</a>
+            <a class="btn btn--ghost" href="#projects">View projects</a>
           </div>
-          <div class="about__skill-info">
-            <h3 class="heading-quaternary about__heading-quaternary">
-              My Skills
-            </h3>
-            <ul class="about__skills">
-              <li class="about__skill">html <i class="devicon-html5-plain"></i></li>
-              <li class="about__skill">css <i class="devicon-css3-plain"></i></li>
-              <li class="about__skill">javascript <i class="devicon-javascript-plain"></i></li>
-              <li class="about__skill">react <i class="devicon-react-original"></i></li>
-              <li class="about__skill">Express.js</li>
-              <li class="about__skill">git  <i class="devicon-git-plain"></i></li>
-              <li class="about__skill">postgres</li>
-              <li class="about__skill">Mongodb</li>
-              <li class="about__skill">Python <i class="devicon-python-plain"></i></li>
-              <li class="about__skill">node.js <i class="devicon-nodejs-plain"></i></li>
-              <li class="about__skill">git</li>
-              <li class="about__skill">vscode</li>
-              <li class="about__skill">Sql</li>
-              <li class="about__skill"> Responsive design</li>
-              <li class="about__skill">Next.js <i class="devicon-nextjs-original"></i></li>
-              <li class="about__skill">TypeScript <i class="devicon-typescript-plain"></i></li>
-              <li class="about__skill">TanStack Query</li>
-              <li class="about__skill">Zustand</li>
-              <li class="about__skill">Prisma</li>
-              <li class="about__skill">RBAC</li>
-              <li class="about__skill">Redis <i class="devicon-redis-plain"></i></li>
-              <li class="about__skill">Docker <i class="devicon-docker-plain"></i></li>
-              <li class="about__skill">Vitest</li>
-              <li class="about__skill">Tailwind CSS <i class="devicon-tailwindcss-plain"></i></li>
-              <li class="about__skill">Redux-Saga <i class="devicon-redux-original"></i></li>
-              <li class="about__skill">Styled Components</li>
-              <li class="about__skill">Firebase <i class="devicon-firebase-plain"></i></li>
-              <li class="about__skill">Jest</li>
-            </ul>
+          <ul class="hero__proof">
+            <li>Remote-friendly</li>
+            <li>Hourly or project-based</li>
+            <li>Available on Upwork</li>
+          </ul>
+        </div>
+        <div class="hero__portrait-wrap">
+          <img src="./assets/f photo.jpg" alt="Fitsum Amare, full-stack developer" class="hero__portrait" />
+          <p class="hero__portrait-caption">Fitsum Amare · Full-Stack Developer</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="services" class="section section--tint">
+      <div class="container">
+        <p class="eyebrow">What I can do for you</p>
+        <h2 class="section__title">Freelance services that match real client needs</h2>
+        <p class="section__intro">
+          Clear scope, regular updates, and production-ready delivery — the way clients on Upwork and similar platforms expect to work.
+        </p>
+        <div class="services">
+          <article class="service-card">
+            <span class="service-card__num">01</span>
+            <h3>Full-stack web applications</h3>
+            <p>End-to-end products: UI, APIs, database, auth, and deployment-ready structure for SaaS and internal tools.</p>
+          </article>
+          <article class="service-card">
+            <span class="service-card__num">02</span>
+            <h3>Frontend development</h3>
+            <p>Fast, responsive interfaces with Next.js, React, and TypeScript — including data fetching and state management.</p>
+          </article>
+          <article class="service-card">
+            <span class="service-card__num">03</span>
+            <h3>Backend &amp; APIs</h3>
+            <p>REST APIs, PostgreSQL, Prisma, role-based access, and caching with Redis so your app stays secure and stable.</p>
+          </article>
+          <article class="service-card">
+            <span class="service-card__num">04</span>
+            <h3>Testing &amp; infrastructure</h3>
+            <p>Automated tests, Dockerized environments, and careful QA so you are not stuck debugging after handover.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <div class="container">
+        <p class="eyebrow">About</p>
+        <h2 class="section__title">A developer you can brief once and trust to ship</h2>
+        <div class="about">
+          <div>
+            <h3 class="about__heading">My story</h3>
+            <p class="about__text">
+              Full-Stack Developer currently working at Vision Vertex, with experience developing web applications across frontend and backend technologies. Skilled in Next.js, React, TypeScript, Express.js, PostgreSQL, and modern tools such as TanStack Query, Zustand, Docker, and Redis. Experienced in building business applications, REST APIs, role-based access control, and automated backend testing. Also open to freelance opportunities and continuously developing practical skills through real-world projects.
+            </p>
+          </div>
+          <div>
+            <h3 class="about__heading">Skills</h3>
+            <div class="skill-groups">
+              <div>
+                <p class="skill-groups__label">Frontend</p>
+                <ul class="skills">
+                  <li>HTML</li>
+                  <li>CSS</li>
+                  <li>JavaScript</li>
+                  <li>TypeScript</li>
+                  <li>React</li>
+                  <li>Next.js</li>
+                  <li>Tailwind CSS</li>
+                  <li>TanStack Query</li>
+                  <li>Zustand</li>
+                  <li>Redux-Saga</li>
+                  <li>Styled Components</li>
+                  <li>Responsive design</li>
+                </ul>
+              </div>
+              <div>
+                <p class="skill-groups__label">Backend &amp; tools</p>
+                <ul class="skills">
+                  <li>Node.js</li>
+                  <li>Express.js</li>
+                  <li>PostgreSQL</li>
+                  <li>MongoDB</li>
+                  <li>Prisma</li>
+                  <li>RBAC</li>
+                  <li>Redis</li>
+                  <li>Firebase</li>
+                  <li>Docker</li>
+                  <li>Vitest</li>
+                  <li>Jest</li>
+                  <li>Python</li>
+                  <li>SQL</li>
+                  <li>Git</li>
+                </ul>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <section id="experience" class="experience main-section">
-    <div class="main-container">
-      <h2 class="heading-secondary experience__heading-secondary">
-        <span class="heading-secondary__sm"> Experience 💼</span>
-        <span class="heading-secondary__main">
-          Here you will find my professional work experience and the applications I contribute to
-        </span>
-      </h2>
-      <div class="main-section__content">
-        <div class="experience__role">
-          <h3 class="heading-tertiary experience__company">Vision Vertex</h3>
-          <p class="experience__title">Full-Stack Developer</p>
-          <p class="experience__dates">November 2025 – Present</p>
-          <p class="text-primary experience__description">
+    <section id="experience" class="section section--tint">
+      <div class="container">
+        <p class="eyebrow">Professional work</p>
+        <h2 class="section__title">Business applications in production</h2>
+        <div class="role">
+          <div class="role__meta">
+            <h3>Vision Vertex</h3>
+            <p class="role__title">Full-Stack Developer</p>
+            <p class="role__dates">November 2025 – Present</p>
+          </div>
+          <p class="role__text">
             I contribute to the development of business applications at Vision Vertex, working across frontend and backend development, API integration, testing, and application infrastructure.
           </p>
         </div>
 
-        <div class="experience__apps">
-          <article class="experience__card">
-            <h4 class="experience__app-name">VISION FINANCE</h4>
-            <p class="experience__app-role">Frontend Development</p>
-            <p class="experience__app-stack">Next.js • TypeScript • TanStack Query • Zustand</p>
+        <div class="app-grid">
+          <article class="app-card">
+            <p class="app-card__kind">Frontend</p>
+            <h3>Vision Finance</h3>
+            <p>Frontend development for a business finance application.</p>
+            <p class="app-card__stack">Next.js · TypeScript · TanStack Query · Zustand</p>
           </article>
-          <article class="experience__card">
-            <h4 class="experience__app-name">VISION HR</h4>
-            <p class="experience__app-role">Frontend Development</p>
-            <p class="experience__app-stack">Next.js • TypeScript • TanStack Query • Zustand</p>
+          <article class="app-card">
+            <p class="app-card__kind">Frontend</p>
+            <h3>Vision HR</h3>
+            <p>Frontend development for an HR platform used in day-to-day operations.</p>
+            <p class="app-card__stack">Next.js · TypeScript · TanStack Query · Zustand</p>
           </article>
-          <article class="experience__card">
-            <h4 class="experience__app-name">IN-HOUSE CRM</h4>
-            <p class="experience__app-role">Backend Development &amp; Testing</p>
-            <p class="experience__app-stack">Express.js • PostgreSQL • Prisma • RBAC • Redis • Docker • Vitest</p>
+          <article class="app-card">
+            <p class="app-card__kind">Backend &amp; testing</p>
+            <h3>In-house CRM</h3>
+            <p>Backend development and testing for an internal CRM with access control.</p>
+            <p class="app-card__stack">Express.js · PostgreSQL · Prisma · RBAC · Redis · Docker · Vitest</p>
           </article>
         </div>
 
-        <div class="experience__private">
-          <p class="experience__private-title">🔒 Private Company Project</p>
-          <p class="experience__private-text">
-            Source code and detailed screenshots are not publicly available because this is a private company project.
-          </p>
-        </div>
+        <aside class="private-note">
+          <p class="private-note__title">Private company project</p>
+          <p>Source code and detailed screenshots are not publicly available because this is a private company project.</p>
+        </aside>
       </div>
-    </div>
-  </section>
-  
-  <section id="projects" class="projects main-section">
-    <div class="main-container">
-      <h2 class="heading-secondary projects__heading-secondary">
-        <span class="heading-secondary__sm"> Projects 🛠️</span>
-        <span class="heading-secondary__main">
-          Here you will find some of the personal  projects that I created with the project details
-        </span>
-      </h2>
-      <div class="main-section__content">
-        <div class="projects__list-item">
-          <div class="projects__list-item-count">
-            <span class="projects__list-item-count-num"> 1 </span>
-            <span class="projects__list-item-count-line"> </span>
-            <span class="projects__list-item-count-end-dot"> </span>
-          </div>
-          <div class="projects__list-item-details">
-            <div class="projects__list-item-img-cont">
-              <img src="./assets/ecoride.png" alt="Project Image" class="projects__list-item-img" />
-            </div>
-            <h3 class="heading-tertiary projects__list-item-heading-tertiary">
-              Ecoride
-            </h3>
-            
+    </section>
 
-            <p class="text-primary projects__list-item-text-primary">
-              <span>
-                Ecoride is an eco-friendly ride-sharing web application built with React and Tailwind CSS. It offers a clean and responsive interface, allowing users to easily register, book rides, and explore sustainable transportation options. The app is designed to provide a seamless user experience while promoting environmentally conscious commuting.
-              </span>
-             
-            </p>
-            <button class="btn btn-theme projects__btn-theme">
-              <a
-                rel="noreferrer"
-                target="_blank"
-                class="cta-btn cta-btn--hero"
-                href="https://ecoride.cr/"
-              >
-              Live Link
-            </button>
-            <button class="btn btn-inv projects__btn-inv">
-              <a
-                rel="noreferrer"
-                target="_blank"
-                class="cta-btn text-color-main"
-                href="https://github.com/Fitsum1204/Ecoride"
-              >
-              Code Link</button>
-          </div>
-        </div>
-        <div class="projects__list">
-          <div class="projects__list-item">
-            <div class="projects__list-item-count">
-              <span class="projects__list-item-count-num"> 2 </span>
-              <span class="projects__list-item-count-line"> </span>
-              <span class="projects__list-item-count-end-dot"> </span>
+    <section id="projects" class="section">
+      <div class="container">
+        <p class="eyebrow">Selected projects</p>
+        <h2 class="section__title">Live work you can click through</h2>
+        <p class="section__intro">Personal projects with public demos — useful if you want to review UI, flows, and code quality.</p>
+
+        <div class="project-grid">
+          <article class="project-card">
+            <div class="project-card__media">
+              <img src="./assets/ecoride.png" alt="Ecoride ride-sharing app screenshot" />
             </div>
-            <div class="projects__list-item-details">
-              <div class="projects__list-item-img-cont">
-                <img src="./assets/project.jpg" alt="Project Image" class="projects__list-item-img" />
+            <div class="project-card__body">
+              <h3>Ecoride</h3>
+              <p>Eco-friendly ride-sharing web app with a clean, responsive interface for registration, booking, and exploring sustainable transport options.</p>
+              <p class="project-card__stack">React · Tailwind CSS</p>
+              <div class="project-card__links">
+                <a class="btn btn--primary btn--sm" href="https://ecoride.cr/" target="_blank" rel="noreferrer">Live demo</a>
+                <a class="btn btn--ghost btn--sm" href="https://github.com/Fitsum1204/Ecoride" target="_blank" rel="noreferrer">Code</a>
               </div>
-              <h3 class="heading-tertiary projects__list-item-heading-tertiary">
-                MERN Stack Developer Connector
-              </h3>
-             
+            </div>
+          </article>
 
-              <p class="text-primary projects__list-item-text-primary">
-                <span>
-                  This project is a full-stack web application built with the MERN stack (MongoDB, Express.js, React.js, and Node.js) that facilitates connections between developers. It offers features for:User registration and login,Creating and viewing developer profiles and commenting on developers' discussion
-                </span>
-               
-                
-              </p>
-              <button class="btn btn-theme projects__btn-theme">
-                <a
-                rel="noreferrer"
-                target="_blank"
-                class="cta-btn cta-btn--hero"
-                href="https://devconnecter-woho.onrender.com/"
-              >
-                Live Link
-              </button>
-              <button class="btn btn-inv projects__btn-inv">
-                <a
-                  rel="noreferrer"
-                  target="_blank"
-                  class="cta-btn text-color-main"
-                  href="https://github.com/Fitsum1204/DevConnecter"
-                >
-                Code Link</button>
+          <article class="project-card">
+            <div class="project-card__media">
+              <img src="./assets/project.jpg" alt="Developer Connector app screenshot" />
             </div>
-          </div>
-          <div class="projects__list-item">
-            <div class="projects__list-item-count">
-              <span class="projects__list-item-count-num"> 1 </span>
-              <span class="projects__list-item-count-line"> </span>
-              <span class="projects__list-item-count-end-dot"> </span>
-            </div>
-            <div class="projects__list-item-details">
-              <div class="projects__list-item-img-cont">
-                <img src="./assets/coverPicture.png" alt="Project Image" class="projects__list-item-img" />
+            <div class="project-card__body">
+              <h3>Developer Connector</h3>
+              <p>Full-stack MERN app for developer networking: registration, login, profiles, and discussion comments.</p>
+              <p class="project-card__stack">MongoDB · Express.js · React · Node.js</p>
+              <div class="project-card__links">
+                <a class="btn btn--primary btn--sm" href="https://devconnecter-woho.onrender.com/" target="_blank" rel="noreferrer">Live demo</a>
+                <a class="btn btn--ghost btn--sm" href="https://github.com/Fitsum1204/DevConnecter" target="_blank" rel="noreferrer">Code</a>
               </div>
-              <h3 class="heading-tertiary projects__list-item-heading-tertiary">
-                E-Commerce-App
-              </h3>
-              
-  
-              <p class="text-primary projects__list-item-text-primary">
-                <span>
-                  A modern e-commerce web app built with React, Redux-Saga for state management, and Styled Components for custom styling. This Progressive Web App (PWA) supports offline functionality and includes Firebase authentication and database integration. Features responsive design, some Jest tests for component reliability, and an intuitive shopping experience.
-                </span>
-               
-              </p>
-              <button class="btn btn-theme projects__btn-theme">
-                <a
-                  rel="noreferrer"
-                  target="_blank"
-                  class="cta-btn cta-btn--hero"
-                  href="https://e-commerce-app-fitsum.netlify.app/"
-                >
-                Live Link
-              </button>
-              <button class="btn btn-inv projects__btn-inv">
-                <a
-                  rel="noreferrer"
-                  target="_blank"
-                  class="cta-btn text-color-main"
-                  href="https://github.com/Fitsum1204/E-Commerce-App"
-                >
-                Code Link</button>
             </div>
-          </div>
-          </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-card__media">
+              <img src="./assets/coverPicture.png" alt="E-commerce app screenshot" />
+            </div>
+            <div class="project-card__body">
+              <h3>E-commerce app</h3>
+              <p>React storefront with Redux-Saga, Styled Components, Firebase auth, PWA support, and Jest tests for a smoother shopping experience.</p>
+              <p class="project-card__stack">React · Redux-Saga · Styled Components · Firebase · Jest</p>
+              <div class="project-card__links">
+                <a class="btn btn--primary btn--sm" href="https://e-commerce-app-fitsum.netlify.app/" target="_blank" rel="noreferrer">Live demo</a>
+                <a class="btn btn--ghost btn--sm" href="https://github.com/Fitsum1204/E-Commerce-App" target="_blank" rel="noreferrer">Code</a>
+              </div>
+            </div>
+          </article>
         </div>
       </div>
-    </div>
-  </section>
-  
-  <footer class="main-footer">
-    <div class="main-footer__upper">
-      <div class="main-container">
-        <ul class="main-footer__links">
-          <li class="main-footer__link">
-            <a href="./index.html">Home</a>
-          </li>
-          <li class="main-footer__link">
-            <a href="./index.html#about">About</a>
-          </li>
-          <li class="main-footer__link">
-            <a href="./index.html#experience">Experience</a>
-          </li>
-          <li class="main-footer__link">
-            <a href="./index.html#experience">Projects</a>
-          </li>
-          
-        </ul>
-        <div class="main-footer__mid-line"></div>
-        
-      </div>
-    </div>
-    <div class="main-footer__bottom">
-      <div class="main-container">
-        <p class="main-footer__bottom-txt">
-           PORTFOLIO
-          <script>document.write(new Date().getFullYear())</script>. Made by
-          Fitsum Amare
-        </p>
-      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p>© <span id="year"></span> Fitsum Amare. Full-stack developer.</p>
+      <ul class="footer__links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Work</a></li>
+        <li><a href="#projects">Projects</a></li>
+      </ul>
     </div>
   </footer>
+
   <script src="./script.js"></script>
 </body>
 
