@@ -29,7 +29,10 @@
         <li class="main-header__navigation-link"><a href="./index.html"> Home </a></li>
         <li class="main-header__navigation-link"><a href="./index.html#about"> About </a></li>
         <li class="main-header__navigation-link">
-          <a href="./index.html#projects"> Projects </a>
+          <a href="./index.html#experience"> Experience </a>
+        </li>
+        <li class="main-header__navigation-link">
+          <a href="./index.html#experience"> Projects </a>
         </li>
         
       </ul>
@@ -51,7 +54,10 @@
           <a class="main-header__sm-menu-link main-header__sm-menu-link--2" name="about">About</a>
         </li>
         <li>
-          <a class="main-header__sm-menu-link main-header__sm-menu-link--3" name="projects">Projects</a>
+          <a class="main-header__sm-menu-link main-header__sm-menu-link--experience" name="experience">Experience</a>
+        </li>
+        <li>
+          <a class="main-header__sm-menu-link main-header__sm-menu-link--3" name="experience">Projects</a>
         </li>
         <li>
           <a class="main-header__sm-menu-link main-header__sm-menu-link--4" name="contact">Contact</a>
@@ -90,9 +96,7 @@
             </h3>
             <p class="text-primary about__text-primary">
               <span>
-                I am Enthusiastic and self motivated freelance web developer with a strong foundation in web development technologies. Adapt At learning quickly passionate about coding, and eager to contribute to exciting projects. Committed to saying current with industry trends and expanding technical skill sets.
-
-Aspiring to become a highly respected web developer and IT professional, driven by a passion for technology and a commitment to excellence.
+                Full-Stack Developer currently working at Vision Vertex, with experience developing web applications across frontend and backend technologies. Skilled in Next.js, React, TypeScript, Express.js, PostgreSQL, and modern tools such as TanStack Query, Zustand, Docker, and Redis. Experienced in building business applications, REST APIs, role-based access control, and automated backend testing. Also open to freelance opportunities and continuously developing practical skills through real-world projects.
               </span>
               
             </p>
@@ -117,8 +121,71 @@ Aspiring to become a highly respected web developer and IT professional, driven 
               <li class="about__skill">vscode</li>
               <li class="about__skill">Sql</li>
               <li class="about__skill"> Responsive design</li>
+              <li class="about__skill">Next.js <i class="devicon-nextjs-original"></i></li>
+              <li class="about__skill">TypeScript <i class="devicon-typescript-plain"></i></li>
+              <li class="about__skill">TanStack Query</li>
+              <li class="about__skill">Zustand</li>
+              <li class="about__skill">Prisma</li>
+              <li class="about__skill">RBAC</li>
+              <li class="about__skill">Redis <i class="devicon-redis-plain"></i></li>
+              <li class="about__skill">Docker <i class="devicon-docker-plain"></i></li>
+              <li class="about__skill">Vitest</li>
+              <li class="about__skill">Tailwind CSS <i class="devicon-tailwindcss-plain"></i></li>
+              <li class="about__skill">Redux-Saga <i class="devicon-redux-original"></i></li>
+              <li class="about__skill">Styled Components</li>
+              <li class="about__skill">Firebase <i class="devicon-firebase-plain"></i></li>
+              <li class="about__skill">Jest</li>
             </ul>
           </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="experience" class="experience main-section">
+    <div class="main-container">
+      <h2 class="heading-secondary experience__heading-secondary">
+        <span class="heading-secondary__sm"> Experience 💼</span>
+        <span class="heading-secondary__main">
+          Here you will find my professional work experience and the applications I contribute to
+        </span>
+      </h2>
+      <div class="main-section__content">
+        <div class="experience__role">
+          <h3 class="heading-tertiary experience__company">Vision Vertex</h3>
+          <p class="experience__title">Full-Stack Developer</p>
+          <p class="experience__dates">November 2025 – Present</p>
+          <p class="text-primary experience__description">
+            I contribute to the development of business applications at Vision Vertex, working across frontend and backend development, API integration, testing, and application infrastructure.
+          </p>
+        </div>
+
+        <div class="experience__apps">
+          <article class="experience__card">
+            <h4 class="experience__app-name">VISION FINANCE</h4>
+            <p class="experience__app-role">Frontend Development</p>
+            <p class="experience__app-stack">Next.js • TypeScript • TanStack Query • Zustand</p>
+          </article>
+          <article class="experience__card">
+            <h4 class="experience__app-name">VISION HR</h4>
+            <p class="experience__app-role">Frontend Development</p>
+            <p class="experience__app-stack">Next.js • TypeScript • TanStack Query • Zustand</p>
+          </article>
+          <article class="experience__card">
+            <h4 class="experience__app-name">IN-HOUSE CRM</h4>
+            <p class="experience__app-role">Backend Development &amp; Testing</p>
+            <p class="experience__app-stack">Express.js • PostgreSQL • Prisma • RBAC • Redis • Docker • Vitest</p>
+          </article>
+        </div>
+
+        <div class="experience__private">
+          <p class="experience__private-title">🔒 Private Company Project</p>
+          <p class="experience__private-text">
+            Source code and detailed screenshots are not publicly available because this is a private company project.
+          </p>
+          <p class="experience__private-note">
+            This is completely normal and actually signals professionalism.
+          </p>
         </div>
       </div>
     </div>
@@ -255,131 +322,6 @@ Aspiring to become a highly respected web developer and IT professional, driven 
                 Code Link</button>
             </div>
           </div>
-          
-       
-          <div class="projects__list-item projects__list-item--inv">
-            <div class="projects__list-item-details">
-              <div class="projects__list-item-img-cont">
-                <img src="./assets/project1.jpg" alt="Project Image" class="projects__list-item-img" />
-              </div>
-              <h3 class="heading-tertiary projects__list-item-heading-tertiary">
-                Amharic-quote-generator
-              </h3>
-
-              <p class="text-primary projects__list-item-text-primary">
-                <span>
-                  Embrace the wisdom of countless voices with this Random Amharic Quote Generator, handcrafted with HTML, CSS, and JavaScript. Escape the mundane and inject your day with a spark of motivation, amusement, or philosophical contemplation.
-                </span>
-                
-               
-              </p>
-              <button class="btn btn-theme projects__btn-theme">
-                <a
-                  rel="noreferrer"
-                  target="_blank"
-                  class="cta-btn cta-btn--hero"
-                  href="https://amharic-quote-generator.netlify.app/"
-                >
-                Live Link
-              </button>
-              <button class="btn btn-inv projects__btn-inv">
-                <a
-                  rel="noreferrer"
-                  target="_blank"
-                  class="cta-btn text-color-main"
-                  href="https://github.com/Fitsum1204/Amharic-quote-generator"
-                >
-                Code Link</button>
-            </div>
-            <div class="projects__list-item-count">
-              <span class="projects__list-item-count-num"> 2 </span>
-              <span class="projects__list-item-count-line"> </span>
-              <span class="projects__list-item-count-end-dot"> </span>
-            </div>
-          </div>
-          <div class="projects__list-item">
-            <div class="projects__list-item-count">
-              <span class="projects__list-item-count-num"> 3 </span>
-              <span class="projects__list-item-count-line"> </span>
-              <span class="projects__list-item-count-end-dot"> </span>
-            </div>
-            <div class="projects__list-item-details">
-              <div class="projects__list-item-img-cont">
-                <img src="./assets/project2.jpg" alt="Project Image" class="projects__list-item-img" />
-              </div>
-              <h3 class="heading-tertiary projects__list-item-heading-tertiary">
-                RoboFriends
-              </h3>
-              
-
-              <p class="text-primary projects__list-item-text-primary">
-                <span>
-                  An app that lets you search for your robot friends by their names. It uses the jsonplaceholder api to fetch names and emails that is used for the robots.
-                </span>
-               
-              </p>
-              <button class="btn btn-theme projects__btn-theme">
-                <a
-                  rel="noreferrer"
-                  target="_blank"
-                  class="cta-btn cta-btn--hero"
-                  href="https://fitsum1204.github.io/RoboFriends/"
-                >
-                Live Link
-              </button>
-              <button class="btn btn-inv projects__btn-inv">
-                <a
-                  rel="noreferrer"
-                  target="_blank"
-                  class="cta-btn text-color-main"
-                  href="https://github.com/Fitsum1204/RoboFriends"
-                >
-                Code Link</button>
-            </div>
-          </div>
-          <div class="projects__list-item projects__list-item--inv">
-            <div class="projects__list-item-details">
-              <div class="projects__list-item-img-cont">
-                <img src="./assets/project3.jpeg" alt="Project Image" class="projects__list-item-img" />
-              </div>
-              <h3 class="heading-tertiary projects__list-item-heading-tertiary">
-                Light-Dark Mode App
-              </h3>
-              
-
-              <p class="text-primary projects__list-item-text-primary">
-                <span>
-                  This is a basic application that allows users to switch between a light and dark mode theme.
-                </span>
-                
-                <span>
-                  Toggle between light and dark mode themes
-                </span>
-              </p>
-              <button class="btn btn-theme projects__btn-theme">
-                <a
-                  rel="noreferrer"
-                  target="_blank"
-                  class="cta-btn cta-btn--hero"
-                  href="https://fitsum-light-dark-mode.netlify.app/"
-                >
-                Live Link
-              </button>
-              <button class="btn btn-inv projects__btn-inv">
-                <a
-                  rel="noreferrer"
-                  target="_blank"
-                  class="cta-btn cta-btn--hero"
-                  href="https://github.com/Fitsum1204/Light-Dark-Mode"
-                >
-                Code Link</button>
-            </div>
-            <div class="projects__list-item-count">
-              <span class="projects__list-item-count-num"> 4 </span>
-              <span class="projects__list-item-count-line"> </span>
-              <span class="projects__list-item-count-end-dot"> </span>
-            </div>
-          </div>
           </div>
         </div>
       </div>
@@ -397,7 +339,10 @@ Aspiring to become a highly respected web developer and IT professional, driven 
             <a href="./index.html#about">About</a>
           </li>
           <li class="main-footer__link">
-            <a href="./index.html#projects">Projects</a>
+            <a href="./index.html#experience">Experience</a>
+          </li>
+          <li class="main-footer__link">
+            <a href="./index.html#experience">Projects</a>
           </li>
           
         </ul>
